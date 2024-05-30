@@ -2,7 +2,7 @@
 
 //En el archivo index.html que tienes abierto en el navegador (preferiblemente chrome o firefox) vamos a trabajar con la consola, abre tu inspector y en la pestaña de consola, mira si puedes ver el mensaje escrito abajo.
 
-console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
+console.log('Hola soy tu consola y juntas vamos a aprender Javascript');
 
 //Si has encontrado el mensaje puedes continuar con los ejercicios
 
@@ -10,14 +10,25 @@ console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 
 //Escribe tu código aquí
 
-
+console.log("Bienvenida al bootcamp de FemCoders de Factoría F5");
 
 
 //VARIABLES Y TIPOS DE DATOS
 //Ejercicio 2: Crea una variable por los siguientes tipos de dato: string, number, boolean, null, undefined, object, array e imprímelos en la consola.
 
 //Escribe tu código aquí
-
+let txt="esto es un string";
+let number=10;
+let numPar= false;
+let minull=null;
+let miUndefined;
+let yo={
+    name:"Mabel",
+    lastName:"Zarate",
+    age:"33"
+};
+const miArray=[ "banana","orange","apple"];
+console.log(txt,number,numPar,minull,miUndefined,yo,miArray);
 
 
 
@@ -25,7 +36,8 @@ console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 
 //Escribe tu código aquí
 
-
+const postres=['helado', 'tarta', 'pastel'];
+console.log(postres)
 
 
 //Ejercicio 4: Crea una constante con un tipo de dato objeto llamado coder que contengan dos propiedades, nombre y edad e imprímelo en la consola.
@@ -33,13 +45,22 @@ console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 //Escribe tu código aquí
 
 
-
+const coder={
+    nombre: "mabel",
+    edad:33,
+}
+console.log(coder);
 
 //Ejercicio 5: Busca como imprimir en consola el tipo de dato de cada variable que hemos creado.
 
 //Escribe tu código aquí
-
-
+console.log(typeof txt);
+console.log(typeof number);
+console.log(typeof numPar);
+console.log(typeof minull);
+console.log(typeof miUndefined);
+console.log(typeof yo);
+console.log(typeof miArray);
 
 
 //OPERADORES ARITMÉTICOS
@@ -47,12 +68,15 @@ console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 
 //Escribe tu código aquí
 
-
+let resultado= 10+3;
+console.log(resultado);
 
 
 //Ejercicio 7: Crea una varible que reste 2 números e imprime el resultado en consola.
 
 //Escribe tu código aquí
+let resta=10-5;
+console.log(resta);
 
 
 
@@ -61,14 +85,16 @@ console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 
 //Escribe tu código aquí
 
-
+let multiplicacion=10*5;
+console.log(multiplicacion);
 
 
 //Ejercicio 9: Crea una varible que divida 2 números e imprime el resultado en consola.
 
 //Escribe tu código aquí
 
-
+let divicion=10/5;
+console.log(divicion);
 
 
 //OPERADORES DE COMPARACIÓN
@@ -76,14 +102,17 @@ console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 
 //Escribe tu código aquí
 
-
+let m=1;
+let n=2;
+let c = (m==n);
+console.log(c);
 
 
 // Ejercicio 10: Crea otra variable que compare las dos primeras variables creadas en el ejercicio anterior, para que el resultado impreso en la consola sea true.
 
 //Escribe tu código aquí
 
-
+console.log(m!=n);
 
 
 //Ejercicio 11: completa el ejercicio
@@ -91,20 +120,20 @@ console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 let num1 = 15
 let num2 = 20
 
-let comparision = //Realiza la operación de comparación que consideres para que el resultado en consola sea true
-console.log(comparision)
+let comparison = num1!==num2;//Realiza la operación de comparación que consideres para que el resultado en consola sea true
+console.log(comparison)
 
 //Ejercicio 12: completa el ejercicio
 
 let num3 = 1
 let num3AsString = "1"
 
-let result = //Realiza la operación de comparación que consideres entre las dos variables dadas, para que el resultado en consola sea false sin usar el comparador de desigualdad
+let result = num3===num3AsString;//Realiza la operación de comparación que consideres entre las dos variables dadas, para que el resultado en consola sea false sin usar el comparador de desigualdad
 console.log(result) 
 
 //Ejercicio 13: completa el ejercicio
 
-let result2 = //Realiza la operación de comparación que consideres con las dos variables del ejercicio anterior para que el resultado en consola sea true.
+let result2 = num1!==num2;//Realiza la operación de comparación que consideres con las dos variables del ejercicio anterior para que el resultado en consola sea true.
 console.log(result2)
 
 
@@ -114,30 +143,33 @@ console.log(result2)
 
 //Escribe tu código aquí
 
-
-
+let nombre= "mabel ";
+let apellido="zarate";
+let nombreCompleto= nombre+apellido;
+console.log(nombreCompleto);
 
 
 //OPERADORES DE LÓGICA
 //Ejercicio 15: Descomenta todo el bloque desde la variable 'a' hasta el 'console.log(res6)' y completa el ejercicio. (Saldrá un error y no podrás visualizar el resultado hasta que termines este ejercicio)
 
-/* let a = 6;
+ let a = 6;
 let b = 3;
 
-let res =  a < 10 __ b > 1 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
+let res =  a < 10 && b > 1 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
 console.log(res)
 
-let res2 = a < 10 __ b < 1 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea false
+let res2 = a < 10 === b < 1 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea false
 console.log(res2)
 
-let res3 = a == 5 __ b == 5 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea false
+let res3 = a == 5 !== b == 5 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea false
 console.log(res3)
 
-let res4 = a == 6 __ b == 0 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
+let res4 = (a == 6) !== (b == 0) //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
 console.log(res4)
 
-let res5 = a == 0 __ b == 3 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
+let res5 = a == 0 || b == 3 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
+// falso true
 console.log(res5)
 
-let res6 = a == 6 __ b == 3 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
-console.log(res6) */
+let res6 = a == 6 && b == 3 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
+console.log(res6) 

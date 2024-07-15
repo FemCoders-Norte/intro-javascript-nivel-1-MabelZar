@@ -143,9 +143,9 @@ console.log(result2)
 
 //Escribe tu código aquí
 
-let nombre= "mabel ";
-let apellido="zarate";
-let nombreCompleto= nombre+apellido;
+let nombre= "Mabel ";
+let apellido="Zárate";
+let nombreCompleto=` hola mi nombre es ${nombre}y mi apellido es ${apellido}`;
 console.log(nombreCompleto);
 
 
@@ -158,13 +158,13 @@ let b = 3;
 let res =  a < 10 && b > 1 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
 console.log(res)
 
-let res2 = a < 10 === b < 1 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea false
+let res2 = a < 10 && b < 1 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea false
 console.log(res2)
 
-let res3 = a == 5 !== b == 5 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea false
+let res3 = (a == 5 || b == 5 );//Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea false
 console.log(res3)
 
-let res4 = (a == 6) !== (b == 0) //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
+let res4 = (a == 6) && !(b == 0) //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
 console.log(res4)
 
 let res5 = a == 0 || b == 3 //Eliminar el espacio "__" y coloca el comparador lógico que consideres para que el resultado sea true
